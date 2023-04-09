@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Sanity Test Cases">
+
+  <test thread-count="5" name="Test">
+    <parameter name="browserToExecute" value="chrome"/>
+    <parameter name="pinCode" value="534236"/>
+    <classes>
+    
+    <class name="com.Amazon1Automation.QA.BaseClass.BaseClass">
+    <methods> 
+    <include name="initilize" />
+    </methods>
+    </class>
+         
+     <class name="com.Amazon1Automation.QA.TestCases.ValidateAddNewAddressTC"> 
+     <methods>
+     <include name="launchLogin"/> 
+     <include name="executeAddNewAddress">  </include>
+     <include name="performLogout" />
+     </methods>
+     </class>
+     
+     <class name="com.Amazon1Automation.QA.TestCases.ValidateSearchThroughBestSelletsTC"> 
+     <methods>
+     <include name="launchLogin"/> 
+     <exclude name="validatesearchthroughbestsellers">  </exclude>
+     <include name="performLogout">  </include>
+     </methods>
+     </class>
+     
+     <class name="com.Amazon1Automation.QA.TestCases.ValidateSearchDropdownTC"> 
+     <methods>
+     <include name="launchLogin"/> 
+     <include name="executeSearchDropdown">  </include>
+     <include name="performLogout" />
+     </methods>
+     </class>
+      
+    </classes>
+    
+    
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

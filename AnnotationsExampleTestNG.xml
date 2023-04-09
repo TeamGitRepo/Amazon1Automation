@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="AnnotationsExampleTestNG">
+		<classes>
+			<class name="package1.Package1Class1">
+				<methods>
+					<include name="Method1Package1Class1"></include>
+					<include name="Method2Package1Class1"></include>
+					<include name="Method3Package1Class1"></include>
+				</methods>
+			</class>
+			<class name="package1.Package1Class2">
+				<methods>
+					<include name="Method1Package1Class2"></include>
+					<include name="Method2Package1Class2"></include>
+					<include name="Method3Package1Class2"></include>
+				</methods>
+			</class>
+			<class name="package2.Package2Class1">
+				<methods>
+					<include name="Method1Package2Class1"></include>
+					<include name="Method2Package2Class1"></include>
+					<include name="Method3Package2Class1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test thread-count="5" name="testTag2">
+		<classes>
+			<class name="package1.Package1Class1">
+				<methods>
+					<include name="Method1Package1Class1"></include>
+					<include name="Method2Package1Class1"></include>
+					<include name="Method3Package1Class1"></include>
+				</methods>
+			</class>
+			<class name="package1.Package1Class2">
+				<methods>
+					<include name="Method1Package1Class2"></include>
+					<include name="Method2Package1Class2"></include>
+					<include name="Method3Package1Class2"></include>
+				</methods>
+			</class>
+			<class name="package2.Package2Class1">
+				<methods>
+					<include name="Method1Package2Class1"></include>
+					<include name="Method2Package2Class1"></include>
+					<include name="Method3Package2Class1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Test Cases]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browserToExecute" value="chrome"/>
+    <parameter name="pinCode" value="534236"/>
+    <classes>
+      <class name="com.Amazon1Automation.QA.TestCases.ValidateAddNewAddressTC">
+        <methods>
+          <include name="CreateObjects"/>
+          <include name="executeAddNewAddress" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Amazon1Automation.QA.TestCases.ValidateAddNewAddressTC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Sanity Test Cases] -->
